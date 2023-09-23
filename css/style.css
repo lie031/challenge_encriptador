@@ -2,10 +2,103 @@ html{
     box-sizing: border-box;
     font-family: sans-serif;
     font-size: 16px;
+    --primary-color:#f3f5fc;
+    --buttom-decrypt-hover: rgba(216, 223, 232,0.70);
+    --button-encryp-hover: rgba(10, 56, 113, 0.70);;
 }
 
 *, 
 *:before, 
 *:after {
     box-sizing: inherit;
+}
+
+body{
+    background-color:var(--primary-color);
+}
+
+.imagen-alura img{
+    width:40px; 
+    height:40px;
+}
+
+.areas{
+    display: flex;
+    justify-content:space-evenly;
+    width: 100%;
+    height: 100vh;
+}
+
+.content-area-encryp{
+    width: inherit;
+    height: inherit;
+}
+
+
+.area-encryp{
+    width: 50%;
+    height: 300px;
+    padding-top:3rem;
+    margin-left: 100px;
+    outline:none;
+    border: none;
+    resize: none;
+    background-color: var(--primary-color);
+}
+
+.area-decryp{
+    height: 84vh;
+    outline:none;
+    border: none;
+    resize: none;
+    background-color: white;
+    margin-right: 50px;
+    border-radius: 20px;
+    padding: 1rem;
+}
+
+.buttons{
+    margin-top: 150px;
+    margin-left: 100px;
+
+}
+
+.button-encryp,
+.buttom-decryp{
+    width: 30%;
+    height: 3rem;
+    border-radius: 20px;
+    border: 0px solid #000;
+}
+.button-encryp{
+    background-color: rgb(10, 56, 113);
+    color: white;
+}
+
+.buttom-decryp{
+    background-color: rgb(216, 223, 232);
+    color: #0a3871;
+}
+
+
+.buttom-decryp:hover{
+    background-color: var(--buttom-decrypt-hover)
+}
+.button-encryp:hover{
+    background-color: var(--button-encryp-hover)
+}
+
+@media (max-width: 700px) {
+    body{
+        background-color: red;
+    }
+
+    .button-encryp,
+    .buttom-decrypt{
+        display: block;
+        margin-top:0.4rem ;
+        width: 100px;
+        height: 40px;
+    }
+
 }
