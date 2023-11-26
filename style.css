@@ -15,6 +15,7 @@ h1{
     min-height: 100vh ;
     width: 100% ;
     justify-content: space-around;
+    
 }
 
 .container-left{
@@ -119,12 +120,13 @@ h1{
 .output{
     display: flex;
     flex-direction: column;
-    flex: 1;
     justify-content: center;
     align-items: center;
+    flex: 1;
     font-size: 16px;
     color: rgb(61, 61, 61);
-}
+
+}   
 
 .copyButton{
     margin-bottom: 10px;
@@ -136,7 +138,6 @@ h1{
     background: rgb(10, 56, 113);
     color: white;
     font-size: 16px;
-    
 }
 
 .copyButton:hover{
