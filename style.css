@@ -142,5 +142,6 @@ h1{
 .copyButton:hover{
     background-color: rgb(216, 223, 232);
     color: rgb(10, 56, 113);
-    border: 1px solid rgb(10, 56, 113);
+    padding: 24px 0px;
+    border: 1px solid rgb(10, 56, 113); 
 }
