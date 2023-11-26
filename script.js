@@ -34,7 +34,7 @@ function addWord(word){
 }
 
 function newChar(char){
-    if(char === 'a') return 'ai';
+    if(     char === 'a') return 'ai';
     else if(char === 'e') return 'enter';
     else if(char === 'i') return 'imes';
     else if(char === 'o') return 'ober';
